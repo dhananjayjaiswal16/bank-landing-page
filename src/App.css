@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+body{
+    margin:0px;
+    padding: 0px;
+    
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+}
+.logo{
+    font-size: 25px;
+    color: #00b7ff;
+}
+#main{
+    width:100%;
+    height:768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/background.png');
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	z-index: 1;
+    background-color: transparent;
+    transition: 0.6s ease-in-out;
+}
+nav.active{
+	box-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157);
+	background-color: #ffffff;
+}
+nav ul{
+	display: flex;
+}
+.active{
+    background-color: #00b7ff;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(189, 198, 64, 0.411);
+	transition: all ease 0.2s;
+}
+nav ul li a{
+    font-family: calibri;
+	height:40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color:#000000;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover{
+	background-color: #00b7ff;
+    color:#ffffff;
+	box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.336);
+	transition: all ease 0.2s;
+}
+.menu-control-container {
+  display: none !important;
+  font-size: 1.2rem !important;
+  position: absolute !important;
+  right: 30px !important;
+  top: 10px;
+  background-color: inherit !important;
+  border: none !important;
+}
+nav .menu-btn,
+.menu-icon{
+		display:none;
+	}
+.name{
+	font-family: 'Montserrat';
+	width: 500px;
+	position: absolute;
+    left: 22%;
+	top: 50%;
+	transform: translate(-22%,-50%);
+}
+.name span{
+    color: #00b7ff;
+}
+.name .details{
+    color: #969696;
+}
+.name h1{
+	font-family:'Montserrat';
+	font-size: 40px;
+	margin:0px;
+	letter-spacing: 2px;
+	color:#000000;
+}
+.header-btns{
+    display: flex;
+    margin-top: 40px;
+}
+.cv-btn{
+	width:110px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    background-color: #00b7ff;
+    box-shadow: 5px 10px 30px rgba(2, 238, 255, 0.336);
+    border-radius: 10px;
+	color:#ffffff;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.cv-btn:hover{
+	background-color: #0099ff;
+    transition: all ease 0.5s;
+    color: #ffffff;
+}
+  #about{
+  margin-top:100px ;
+	width:100%;
+	box-sizing: border-box;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	padding: 50px 5% 0px 5%;
+	position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-text{
+    width: 45%;
+    color: #fff;
+    list-style: circle;
+}
+.about-text h2{
+	font-size: 2rem;
+	color:#00b7ff;
+    font-weight: 500;
+    margin: 0px;
+	padding: 0px;
+}
+.about-text p{
+    width: 80%;
+	font-size: 1.2rem;
+	color:#272727;
+	
+}
+.plan-btn{
+  margin-top: 20px;
+width: 100px;
+height: 45px;
+border-radius: 10px;
+border: none;
+  outline: none;
+  color: #ffffff;
+background-color:#00b7ff;
+cursor: pointer;
+}
+.plan-btn:hover{
+	background-color: rgb(0, 132, 255);
+    transition: all ease 0.3s;
+    color: #ffffff;
+}
+.about-text button{
+    margin-top: 20px;
+	width: 140px;
+	height: 45px;
+	border-radius: 10px;
+	border: none;
+    outline: none;
+    color: #ffffff;
+	background-color:#00b7ff;
+}
+.about-text button:hover{
+	background-color: rgb(0, 132, 255);
+    transition: all ease 0.3s;
+    color: #ffffff;
+}
+.about-image{
+    width: 50%;
+}
+.about-image img{
+  width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#features{
+    width:100%;
+    /* height:100vh; */
+    box-sizing: border-box;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px ;
+    background-color: #ffffff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.a-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.a-box{
+    background-color: #ffffff;
+    width:300px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.a-box:hover{
+    box-shadow: 2px 2px 10px #00B7ff;
+}
+#presentation{
+    padding-top: 30px;
+    width:100%;
+    height:768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#presentation h1{
+font-size: 2rem;
+}
+#presentation img{
+  position: relative;
+  top: 15px;
+}
+.s-b-text{
+  width: 100%;
+  height: 100%;
+  background-color:#ffffff;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.s-b-text p{
+  margin: 0px;
+  color:#000266a6;
+  font-size: 1.1rem;
+  font-family: calibri;
+  display: block;
+  display: -webkit-box;
+  max-width: 80%;
+  margin-top: 25px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.s-b-text p:hover{
+  color:#000266;
+}
+.s-b-text a{
+  margin-top:15px ;
+}
+.arrow-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+  nav{
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-control-container{
+    display: block !important;
+  }
+  .nav-item-container {
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative;
+    width: 200px;
+    left: 40px;
+    top: 50px;
+  }
+  .a-container{
+    flex-direction: column;
+  }
+  #about {
+    flex-direction: column;
+    margin: auto;
+  }
+  .about-text{
+    width: 100%;
+  }
+  .about-image{
+    width: 100%;
+  }
+  .about-image img{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .presentation-img{
+    width: 80%;
+  }
+  .cv-btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .name h1{
+    width: 80%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #presentation{
+    height: 460px;
   }
 }
