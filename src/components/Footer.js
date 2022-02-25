@@ -124,7 +124,7 @@ const Footer = () => {
         </Center>
         <Right>
           <Title>Reach out to us</Title>
-          <Contact>+91 2222403047</Contact>
+          <Contact><i class="fa-solid fa-phone"></i> +91 2222403047</Contact>
           <Contact>contact@yolobank.com</Contact>
           <Payment src='https://ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg' />
         </Right>
